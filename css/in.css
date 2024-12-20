@@ -1,0 +1,239 @@
+
+
+body {
+    background-image: url(../img/main.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .full-height {
+    background: rgba(26, 26, 26, 0.473);
+    background-attachment: fixed;
+    max-height: 100vh;
+    height: 100vh;
+  }
+  table {
+    width: 100%;
+    padding-top: 5px;
+  }
+  .heading-text {
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 63px;
+    margin-top: 15%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .sub-text2 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+  }
+  .bookbtn{
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    animation: transitionIn-Y-over 0.5s;
+  }
+  .register-btn {
+    background-color: rgba(240, 248, 255, 0.589);
+    color: #345cc4;
+  }
+  
+  .edoc-logo {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 20px;
+    animation: transitionIn-Y-over 0.5s;
+  }
+  
+  .edoc-logo-sub {
+    color: rgba(255, 255, 255, 0.733);
+    font-size: 12px;
+  }
+  
+  .nav-item {
+    color: rgba(255, 255, 255, 0.671);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    animation: transitionIn-Y-over 0.5s;
+  }
+  
+  .nav-item:hover {
+    color: #f0f0f0;
+  }
+  
+  .footer-hashen {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    font-size: 13px;
+    animation: transitionIn-Y-over 0.5s;
+  }
+  .nav-item {
+    font-size: 18px;
+    color: #fdfdfd;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #ffffffef;
+    border-radius: 25px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: inline-block;
+  }
+  
+  .nav-item:hover {
+    background-color: #ffffff;
+    color: #1848e2b0;
+    border-color: #fdfdfd; 
+  }
+
+  
+
+  .button-85 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-85:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+@media screen and (max-width: 768px) {
+    .heading-text {
+        font-size: 32px;
+        line-height: 48px;
+        margin-top: 10%;
+    }
+    .sub-text2 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .edoc-logo {
+        font-size: 18px;
+    }
+    .nav-item {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin: 5px;
+    }
+    .login-btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading-text {
+        font-size: 28px;
+        line-height: 42px;
+        margin-top: 5%;
+    }
+    .sub-text2 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .edoc-logo {
+        font-size: 16px;
+    }
+    .nav-item {
+        font-size: 14px;
+        padding: 6px 12px;
+        margin: 5px;
+    }
+    .login-btn {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}

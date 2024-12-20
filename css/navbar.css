@@ -1,0 +1,61 @@
+.content {
+    padding: 20px; /* Add some padding to the content area */
+}
+
+
+.navbar {
+    width: 100%;
+    background-color: #343a40; /* Dark background for the navbar */
+}
+
+.navbar-brand {
+    color: white; /* Brand color */
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.nav-link {
+    color: white; /* Link color */
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-link:hover {
+    color: #007bff; /* Blue on hover */
+}
+
+/* Ensure navbar items are centered */
+.navbar-nav {
+    justify-content: center; /* Center the nav items */
+}
+
+/* Align the toggler to the right in mobile */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        margin-left: auto;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 56px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 999;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-top: 1px solid #e7e7e7;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-item {
+        text-align: left;
+        padding: 10px 0;
+    }
+}
